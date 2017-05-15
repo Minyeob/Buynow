@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gray_background"
+    android:paddingTop="20dp"
+    android:paddingBottom="30dp"
+    android:paddingRight="35dp"
+    android:paddingLeft="35dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/price_search_parent_layout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="7dp"
+        android:orientation="vertical"
+        android:background="#99DDDDDD"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="최 저 가 조 회"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#99DDDDDD"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:checkedButton="@+id/checked_button"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <RadioButton
+                    android:id="@+id/radio_button_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="카테고리"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:text="상품명"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button_product_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이디"/>
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radio_group"
+                android:padding="2dp">
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="20dp"
+                    android:textColor="#ff000000"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="23dp"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:privateImeOptions="defaultInputmode=korean"
+                    android:selectAllOnFocus="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="#00ffffff"
+                    android:src="@drawable/price_search_activity_search_button"
+                    android:onClick="onClickSearchButton"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:layout_marginTop="2dp"
+            android:padding="3dp">
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ajou.buynow">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Buynow"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatternAnalysisActivity_Main"
+            android:label="소비패턴분석"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".PriceSearchActivity_Main"
+            android:theme="@style/AppTheme"
+            android:label="최저가조회"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity
+            android:name=".InquiryMangerActivity_Main"
+            android:theme="@style/AppTheme"
+            android:label="구매내역조회"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+    </application>
+
+</manifest>

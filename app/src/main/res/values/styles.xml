@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:windowActionBarOverlay">true</item>
+
+    <item name="windowActionBarOverlay">true</item>-->
+        <!--배경위에 겹쳐서 투명하게 화면이 보일지를 나타낸다-->
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!--배경화면이 보이도록 배경색은 배경에 따르도록 한다-->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:titleTextStyle">@style/Theme.YourTheme.Styled.ActionBar.TitleTextStyle</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/transparent</item>
+        <item name="titleTextStyle">@style/Theme.YourTheme.Styled.ActionBar.TitleTextStyle</item>
+
+    </style>
+
+
+    <!--텍스트들이 어떻게 보일것인지 디자인을 결정한다-->
+    <style name="Theme.YourTheme.Styled.ActionBar.TitleTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+</resources>

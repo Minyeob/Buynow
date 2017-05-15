@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="홈"
+        android:icon="@drawable/pattern_anaylsis_menu_home"
+        app:showAsAction="always"
+        />
+</menu>

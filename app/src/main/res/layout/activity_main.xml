@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--values에 resource를 저장하고 그 값을 가져다 사용하기 위해서는
+    "@파일이름/resource name" 형태로 가져다가 사용한다
+    참조한 값으로 바로 가서 고치기 위해서는 ctrl + 'B' -->
+    <!--참조된 형태로 볼려면 ctrl + '=' 이고 안의 value를 보려면
+    ctrl + '-' 그리고 모든파일에서 주석을달기 위해서는 ctrl + '/' -->
+    <!--layout의 padding은 안의 내용이 전체화면으로부터 얼마만큼의 공간을두고
+    나타나는지 알려준다-->
+
+    <!--글자가 좌정렬,우정렬,센터정렬인지 결정해주는 gravity
+  padding은 글자가 배치되고 글자로부터 도형의 남은공간의 크기를 결정
+  크면 글자말고 도형의 빈공간이 많음
+  layout_weight는 해당 view가 얼마만큼의 크기인지를 결정해준다-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blackback"
+        android:id="@+id/background" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/buynow"
+            android:id="@+id/buynow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/button1"
+            android:layout_marginTop="140dp"
+            android:id="@+id/button1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/button2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/button3"
+            android:layout_marginTop="10dp"
+            android:id="@+id/button3" />
+    </LinearLayout>
+
+
+</FrameLayout>
